@@ -12,35 +12,29 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-text">
           <h1 className="hero-title">
-            I am
-            <br className="hidden lg:inline-block" />
+            I am 
+            <br className="hidden-lg" />
             <Typewriter
               options={{
-                strings: [
-                  "Web Developer",
-                  "UI/UX Designer"
-                ],
+                strings: ["Web Developer", "UI/UX Designer"],
                 autoStart: true,
                 loop: true,
               }}
             />
           </h1>
-          <div className="hero-divider"></div>
+          <div className="hero-underline"></div>
           <p className="hero-description">
             I am currently studying at GIAIC, pursuing a course focused on Artificial Intelligence, Web 3.0, and the Metaverse. With a deep passion for technology, I am dedicated to continually learning new skills and keeping myself updated to stay ahead in these rapidly evolving fields.
           </p>
-          
-          <div className="hero-contact">
-            <Link href={"#Contact"}>
-              <button className="contact-button">
-                Contact
-              </button>
+          <div className="hero-button-container">
+            <Link href="#Contact">
+              <button className="hero-button">Contact</button>
             </Link>
           </div>
         </div>
-        <div className="hero-image">
+        <div className="hero-image-container">
           <Image
-            className="image"
+            className="hero-image"
             alt="hero"
             width={320}
             height={400}
@@ -50,6 +44,6 @@ const Hero = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Hero;
